@@ -3128,3 +3128,712 @@
 2025-05-13 14:17:30 - o.h.b.r.i.BootstrapServiceRegistryImpl - DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
 2025-05-13 14:17:30 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown initiated...
 2025-05-13 14:17:30 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown completed.
+2025-05-13 14:41:58 - c.example.demo.DemoApplicationTests - INFO - Starting DemoApplicationTests using Java 17.0.15 with PID 50387 (started by samwolfe in /Users/samwolfe/Documents/demo)
+2025-05-13 14:41:58 - c.example.demo.DemoApplicationTests - DEBUG - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-13 14:41:58 - c.example.demo.DemoApplicationTests - INFO - No active profile set, falling back to 1 default profile: "default"
+2025-05-13 14:41:58 - o.s.w.c.s.GenericWebApplicationContext - DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1a5f7e7c
+2025-05-13 14:41:58 - o.s.d.r.c.RepositoryConfigurationDelegate - INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-13 14:41:58 - o.s.d.r.c.RepositoryConfigurationDelegate - INFO - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2025-05-13 14:41:58 - o.h.jpa.internal.util.LogHelper - DEBUG - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@42110406
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/samwolfe/Documents/demo/build/classes/java/test/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.example.demo.Book]
+	Mapping files names []
+	Properties []
+2025-05-13 14:41:58 - o.h.i.internal.IntegratorServiceImpl - DEBUG - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+2025-05-13 14:41:58 - o.h.i.internal.IntegratorServiceImpl - DEBUG - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2025-05-13 14:41:58 - org.hibernate.Version - INFO - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-13 14:41:58 - org.hibernate.cfg.Environment - DEBUG - HHH000206: 'hibernate.properties' not found
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-05-13 14:41:58 - org.hibernate.orm.idgen.factory - DEBUG - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2025-05-13 14:41:59 - o.h.c.i.RegionFactoryInitiator - DEBUG - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2025-05-13 14:41:59 - o.h.c.i.RegionFactoryInitiator - INFO - HHH000026: Second-level cache disabled
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@87f501f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@87f501f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@87f501f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@54495935
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@54495935
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@67c6f4d8
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@67c6f4d8
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@3a6e9856
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@3a6e9856
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration byte -> org.hibernate.type.BasicTypeReference@4863c8ac
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration byte -> org.hibernate.type.BasicTypeReference@4863c8ac
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@4863c8ac
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration binary -> org.hibernate.type.BasicTypeReference@56fda064
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@56fda064
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration [B -> org.hibernate.type.BasicTypeReference@56fda064
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@6cdee57
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@6cdee57
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration image -> org.hibernate.type.BasicTypeReference@482f7af0
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration blob -> org.hibernate.type.BasicTypeReference@1edfedf1
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@1edfedf1
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@251a90ce
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@4c4c7d6c
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration short -> org.hibernate.type.BasicTypeReference@7f0766ef
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration short -> org.hibernate.type.BasicTypeReference@7f0766ef
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@7f0766ef
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration integer -> org.hibernate.type.BasicTypeReference@1e56bc9b
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration int -> org.hibernate.type.BasicTypeReference@1e56bc9b
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@1e56bc9b
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration long -> org.hibernate.type.BasicTypeReference@6f3bd37f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration long -> org.hibernate.type.BasicTypeReference@6f3bd37f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@6f3bd37f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration float -> org.hibernate.type.BasicTypeReference@403364e9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration float -> org.hibernate.type.BasicTypeReference@403364e9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@403364e9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration double -> org.hibernate.type.BasicTypeReference@447521e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration double -> org.hibernate.type.BasicTypeReference@447521e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@447521e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@2fde9469
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@2fde9469
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@1ecf0ac6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@1ecf0ac6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration character -> org.hibernate.type.BasicTypeReference@458031da
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration char -> org.hibernate.type.BasicTypeReference@458031da
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@458031da
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@7be94cd6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration string -> org.hibernate.type.BasicTypeReference@20cff21e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@20cff21e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@463045fb
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration characters -> org.hibernate.type.BasicTypeReference@27ab206
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@27ab206
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration [C -> org.hibernate.type.BasicTypeReference@27ab206
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@3344d163
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration text -> org.hibernate.type.BasicTypeReference@6cc48a17
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@289f15e9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration clob -> org.hibernate.type.BasicTypeReference@7f22687e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@7f22687e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@6af87130
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@6af87130
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@22a4ca4a
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@72c4a3aa
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@1e495414
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@3711c71c
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@33e3bd2e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@646d810b
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@30508066
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@30508066
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@9408857
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@9408857
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@27e44e9c
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@27e44e9c
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@2f09e6b2
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@2f09e6b2
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@1bee0085
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@1bee0085
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@16e1219f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@13f40d71
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@73a845cb
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@73a845cb
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@18a98913
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7dbae40
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@34f7b44f
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@5403907
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@5403907
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@5175d9ad
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@b06d46d
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration date -> org.hibernate.type.BasicTypeReference@25a5c8e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@25a5c8e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration time -> org.hibernate.type.BasicTypeReference@656c5c3
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@656c5c3
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@7911cc15
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@7911cc15
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@7911cc15
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@4409cae6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@4409cae6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@4409cae6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@14e750c5
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@242ff747
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration instant -> org.hibernate.type.BasicTypeReference@5329f6b3
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@5329f6b3
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@597d48ca
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@597d48ca
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@597d48ca
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@77324a58
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@2c7c0e36
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration class -> org.hibernate.type.BasicTypeReference@307cf964
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@307cf964
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration currency -> org.hibernate.type.BasicTypeReference@374ccb9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@374ccb9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@374ccb9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration locale -> org.hibernate.type.BasicTypeReference@66713605
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@66713605
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@2ab09943
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@2ab09943
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@7d50f2a8
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@7d50f2a8
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@5864e8bf
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@5864e8bf
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration url -> org.hibernate.type.BasicTypeReference@37ca3ca8
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@37ca3ca8
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration vector -> org.hibernate.type.BasicTypeReference@191ec193
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@6321a5aa
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@1c7f9861
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@7a36c83a
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@154b8cb6
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration object -> org.hibernate.type.JavaObjectType@25ce435
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@25ce435
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration null -> org.hibernate.type.NullType@1a2e563e
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@5b066c33
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@62ea8931
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@47fb7ec9
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@2f8c4fae
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@4703c998
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@71166348
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@6d874695
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@20bb85b4
+2025-05-13 14:41:59 - o.h.b.internal.BootstrapContextImpl - DEBUG - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@634e1b39] into BootstrapContext; was [null]
+2025-05-13 14:41:59 - o.h.b.internal.ClassLoaderAccessImpl - DEBUG - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@634e1b39) [was null]
+2025-05-13 14:41:59 - o.h.b.internal.BootstrapContextImpl - DEBUG - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@4d81e83a] into BootstrapContext; was [null]
+2025-05-13 14:41:59 - o.h.b.internal.BootstrapContextImpl - DEBUG - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@53a301f3] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7cf8f45a]
+2025-05-13 14:41:59 - o.h.j.b.i.PersistenceUnitInfoDescriptor - DEBUG - Pushing class transformers for PU named 'default' on loading classloader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406
+2025-05-13 14:41:59 - o.s.o.j.p.SpringPersistenceUnitInfo - INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-13 14:41:59 - o.h.b.internal.BootstrapContextImpl - DEBUG - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@634e1b39]
+2025-05-13 14:41:59 - o.h.b.internal.ClassLoaderAccessImpl - DEBUG - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@634e1b39]
+2025-05-13 14:41:59 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2025-05-13 14:41:59 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@347123dc
+2025-05-13 14:41:59 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2025-05-13 14:41:59 - o.h.e.j.e.i.JdbcEnvironmentInitiator - DEBUG - Database ->
+	   name : PostgreSQL
+	version : 14.18 (Homebrew)
+	  major : 14
+	  minor : 18
+2025-05-13 14:41:59 - o.h.e.j.e.i.JdbcEnvironmentInitiator - DEBUG - Driver ->
+	   name : PostgreSQL JDBC Driver
+	version : 42.7.5
+	  major : 42
+	  minor : 7
+2025-05-13 14:41:59 - o.h.e.j.e.i.JdbcEnvironmentInitiator - DEBUG - JDBC version : 4.2
+2025-05-13 14:41:59 - org.hibernate.orm.deprecation - WARN - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-13 14:41:59 - org.hibernate.orm.dialect - DEBUG - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 14.18
+2025-05-13 14:41:59 - o.h.e.j.e.s.IdentifierHelperBuilder - DEBUG - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2025-05-13 14:41:59 - org.hibernate.orm.jdbc.lob - DEBUG - HHH10010004: Disabling contextual LOB creation as Dialect reported it is not supported
+2025-05-13 14:41:59 - o.hibernate.orm.connections.pooling - INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-13 14:41:59 - o.h.t.d.sql.spi.DdlTypeRegistry - DEBUG - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@603d25db) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@95cecc5)
+2025-05-13 14:41:59 - o.h.t.d.sql.spi.DdlTypeRegistry - DEBUG - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@48b3b1b8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@b86cb18)
+2025-05-13 14:41:59 - o.h.t.d.jdbc.spi.JdbcTypeRegistry - DEBUG - addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-05-13 14:41:59 - o.h.t.d.jdbc.spi.JdbcTypeRegistry - DEBUG - addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@26f5e45d
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@26f5e45d
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@25ce435`
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-05-13 14:41:59 - o.hibernate.type.BasicTypeRegistry - DEBUG - Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-05-13 14:41:59 - o.h.type.spi.TypeConfiguration$Scope - DEBUG - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ca2cd5e] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@a120b9]
+2025-05-13 14:41:59 - o.h.boot.model.relational.Namespace - DEBUG - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2025-05-13 14:41:59 - o.h.boot.model.internal.EntityBinder - DEBUG - Binding entity from annotated class: com.example.demo.Book
+2025-05-13 14:41:59 - o.h.boot.model.internal.EntityBinder - DEBUG - Import with entity name Book
+2025-05-13 14:41:59 - o.h.boot.model.internal.EntityBinder - DEBUG - Bind entity com.example.demo.Book on table books
+2025-05-13 14:41:59 - o.h.b.model.internal.AnnotatedColumn - DEBUG - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-05-13 14:41:59 - o.h.b.model.internal.AnnotatedColumn - DEBUG - Binding column: AnnotatedColumn()
+2025-05-13 14:41:59 - o.h.b.internal.ClassLoaderAccessImpl - DEBUG - Not known whether passed class name [com.example.demo.Book] is safe
+2025-05-13 14:41:59 - o.h.b.internal.ClassLoaderAccessImpl - DEBUG - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.Book
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - MetadataSourceProcessor property id with lazy=false
+2025-05-13 14:41:59 - o.h.b.m.i.AbstractPropertyHolder - DEBUG - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Book:id]
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - building BasicValue for id
+2025-05-13 14:41:59 - org.hibernate.mapping.BasicValue - DEBUG - Skipping column re-registration: books.id
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - Building property id
+2025-05-13 14:41:59 - o.h.boot.model.internal.BinderHelper - DEBUG - #makeIdGenerator(BasicValue([Column(id)]), id, identity, , ...)
+2025-05-13 14:41:59 - o.h.b.model.internal.AnnotatedColumn - DEBUG - Binding column: AnnotatedColumn()
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - MetadataSourceProcessor property description with lazy=false
+2025-05-13 14:41:59 - o.h.b.m.i.AbstractPropertyHolder - DEBUG - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Book:description]
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - building BasicValue for description
+2025-05-13 14:41:59 - org.hibernate.mapping.BasicValue - DEBUG - Skipping column re-registration: books.description
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - Building property description
+2025-05-13 14:41:59 - o.h.b.model.internal.AnnotatedColumn - DEBUG - Binding column: AnnotatedColumn()
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - MetadataSourceProcessor property name with lazy=false
+2025-05-13 14:41:59 - o.h.b.m.i.AbstractPropertyHolder - DEBUG - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Book:name]
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - building BasicValue for name
+2025-05-13 14:41:59 - org.hibernate.mapping.BasicValue - DEBUG - Skipping column re-registration: books.name
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - Building property name
+2025-05-13 14:41:59 - o.h.b.model.internal.AnnotatedColumn - DEBUG - Binding column: AnnotatedColumn()
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - MetadataSourceProcessor property rating with lazy=false
+2025-05-13 14:41:59 - o.h.b.m.i.AbstractPropertyHolder - DEBUG - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Book:rating]
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - building BasicValue for rating
+2025-05-13 14:41:59 - org.hibernate.mapping.BasicValue - DEBUG - Skipping column re-registration: books.rating
+2025-05-13 14:41:59 - o.h.b.model.internal.PropertyBinder - DEBUG - Building property rating
+2025-05-13 14:41:59 - o.h.b.r.c.i.ClassLoaderServiceImpl - DEBUG - HHH000194: Package not found or no package-info.java: com.example.demo
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - Starting `BasicValueBinder#fillSimpleValue` for description
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - Starting `BasicValueBinder#fillSimpleValue` for name
+2025-05-13 14:41:59 - o.h.b.m.internal.BasicValueBinder - DEBUG - Starting `BasicValueBinder#fillSimpleValue` for rating
+2025-05-13 14:41:59 - org.hibernate.mapping.PrimaryKey - DEBUG - Forcing column [id] to be non-null as it is part of the primary key for table [books]
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryImpl - DEBUG - Building session factory
+2025-05-13 14:41:59 - o.h.s.i.SessionFactoryServiceRegistryImpl - DEBUG - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryImpl - DEBUG - Instantiating SessionFactory with settings: {java.specification.version=17, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@1169fdfd, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, org.gradle.test.worker=5, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Users/samwolfe/.gradle/caches/8.13/workerMain/gradle-worker.jar:/Users/samwolfe/Documents/demo/build/classes/java/test:/Users/samwolfe/Documents/demo/build/classes/java/main:/Users/samwolfe/Documents/demo/build/resources/main:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/3.4.5/c6ef06dfef1b02f3e3f82d67118d3944672e7d49/spring-boot-starter-data-jpa-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/3.4.5/54cb03e8615f0c10cd44b5b7d155af3d0be7d66a/spring-boot-starter-web-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.7.5/747897987b86c741fb8b56f6b81929ae1e6e4b46/postgresql-42.7.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/3.4.5/d32bf5dbb8fb188c0e26f2ebc659a8c29d1cb8c8/spring-boot-starter-test-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/6.4.5/981ab6cc661fcb3be1f4571fd886956b8e18cb30/spring-security-test-6.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.11.4/a699f024a4a4706b36bddbeb42d499aff9e09379/junit-jupiter-5.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.11.4/dc10ec209623986a68ea07f67cdc7d2a65a60355/junit-jupiter-engine-5.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.11.4/21f61b123ad6ac8f7e73971bff3a096c8d8e1cd0/junit-platform-engine-1.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/5.14.2/3cfc377d4bb9fe729f3dd9098d9a9b27da58324a/mockito-junit-jupiter-5.14.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.11.4/e4c86fbe2a39c60c6b87260ef7f7e7c1a1906481/junit-jupiter-params-5.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.11.4/308315b28e667db4091b2ba1f7aa220d1ddadb97/junit-jupiter-api-5.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.11.4/8898eea3ed0da2641548d602c3e308804f166303/junit-platform-commons-1.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.11.4/3d83c201899d8c5e74e1a5d628eab900342a0e48/junit-platform-launcher-1.11.4.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/3.4.5/e361f635454d0694547cc226ece3aa10fde7ff2b/spring-boot-starter-jdbc-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/3.4.5/b7a87d4565c99754e0fcf4da405ebe3ab0870c88/spring-boot-starter-json-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/3.4.5/3b1cd30bd3be52f5fd0c0934882ec86ed4457646/spring-boot-starter-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.hibernate.orm/hibernate-core/6.6.13.Final/e7f1b2d53e89b9863dca12cd5f1b261ba413415b/hibernate-core-6.6.13.Final.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/3.4.5/40000309bebdc0e4e284211701f039eb5b1fb1a6/spring-data-jpa-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/6.2.6/2bb7fe48b4fef28af71be32815200c19ac95f783/spring-aspects-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/3.4.5/d3121e25897969409967675c0c450dd3cad45162/spring-boot-starter-tomcat-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/6.2.6/48c37c417d00b9dc12e344892b206bbbf67f0945/spring-webmvc-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/6.4.5/f430226d6af53c86bf02feb461d9b035953d8deb/spring-security-web-6.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.2.6/17a4f806e877a1064a2442fe7545b0036fb9550f/spring-web-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.48.3/c48effe7d78de3cf5e8a98c614281ec6a2466a77/checker-qual-3.48.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/3.4.5/c09f2ad6c025325b151ed1643cbbad93217eecfb/spring-boot-test-autoconfigure-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/3.4.5/5029e995e6d69785f3125ba9ea043490b80cbe83/spring-boot-test-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.9.0/37fe2217f577b0b68b18e62c4d17a8858ecf9b69/json-path-2.9.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/4.0.5/ca84c2a7169b5293e232b9d00d1e4e36d4c3914a/jaxb-runtime-4.0.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-core/4.0.5/7b4b11ea5542eea4ad55e1080b23be436795b3/jaxb-core-4.0.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.2/6cd5a999b834b63238005b7144136379dc36cad2/jakarta.xml.bind-api-4.0.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.5.2/95d166b18f95907be0f46cdb9e1c0695eed03387/json-smart-2.5.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.26.3/d26263eb7524252d98e602fc6942996a3195e29/assertj-core-3.26.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.2.2/7336242073ebf83fe034e42b46a403c5501b63c9/awaitility-4.2.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/5.14.2/f7bf936008d7664e2002c3faf0c02071c8d10e7c/mockito-core-5.14.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.3/aaa43e0823d2a0e106e8754d6a9c4ab24e05e9bc/jsonassert-1.5.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/6.2.6/1f1d95749dca9a7535f0ba51e1dfdbf987bebcf1/spring-test-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.4.5/ae545fe651f167ccf36f494300f460d6f8c978b8/spring-security-core-6.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/3.4.5/c44ad60865ca1d0b88e576b0355e755ed28aec52/spring-boot-autoconfigure-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.4.5/414fcf9f9e0ccb961243d8f36ef8ad6d4040e745/spring-boot-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/6.2.6/b579360aaab1e52ec95d0538cc3c89fa8689485d/spring-orm-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/6.2.6/529137b0f92d8cfd13876e6aa8df9088246b4755/spring-jdbc-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/3.4.5/bad5044a4d2f322ff939247ff448d4322c6b7d5d/spring-data-commons-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.2.6/ae08b2ec4a49ab7acb0b5eea7c309363139d54ad/spring-context-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.2.6/ab5502a1e9694f2ecd001ecb1ee1fc46b29cfbd9/spring-aop-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/6.2.6/fb46b2d651a6c509625bc6e7e38865137f658eca/spring-tx-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/6.2.6/d43abe3b5765748210c511043b1d4904ca216a9f/spring-beans-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/6.2.6/d9efc768cfda1d97c8fe769a9d50f936eb7f18e2/spring-expression-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.2.6/4639dac5fc46cb6a9f6eb2709decfb90313e0f2c/spring-core-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.10.0/1355088731b4ec2107ff7f319f0d7445d916bab/xmlunit-core-2.10.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/3.4.5/f4821c3181ef6dfbbc5305ebf5a3ed2c5493ef14/spring-boot-starter-logging-3.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/2.1.1/48b9bda22b091b1f48b13af03fe36db3be6e1ae3/jakarta.annotation-api-2.1.1.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.3/936b36210e27320f920536f695cf1af210c44586/snakeyaml-2.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/5.1.0/8c96e36c14461fc436bb02b264b96ef3ca5dca8c/HikariCP-5.1.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/3.1.0/66901fa1c373c6aff65c13791cc11da72060a8d6/jakarta.persistence-api-3.1.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/jakarta.transaction/jakarta.transaction-api/2.0.1/51a520e3fae406abb84e2e1148e6746ce3f80a1a/jakarta.transaction-api-2.0.1.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.6.1.Final/886afbb445b4016a37c8960a7aef6ebd769ce7e5/jboss-logging-3.6.1.Final.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/7.0.3.Final/e183c4be8bb41d12e9f19b374e00c34a0a85f439/hibernate-commons-annotations-7.0.3.Final.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/io.smallrye/jandex/3.2.0/f17ad860f62a08487b9edabde608f8ac55c62fa7/jandex-3.2.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.7.0/e98374da1f2143ac8e6e0a95036994bb19137a3/classmate-1.7.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.15.11/f61886478e0f9ee4c21d09574736f0ff45e0a46c/byte-buddy-1.15.11.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/jakarta.inject/jakarta.inject-api/2.0.1/4c28afe1991a941d7702fe1362c365f0a8641d1e/jakarta.inject-api-2.0.1.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.13.0/5a02e48521624faaf5ff4d99afc88b01686af655/antlr4-runtime-4.13.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.5.18/fc371f3fc97a639de2d67947cffb7518ec5e3d40/logback-classic-1.5.18.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.24.3/da1143e2a2531ee1c2d90baa98eb50a28a39d5a7/log4j-to-slf4j-2.24.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/2.0.17/524cb6ccc2b68a57604750e1ab8b13b5a786a6aa/jul-to-slf4j-2.0.17.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.17/d9e58ac9c7779ba3bf8142aff6c830617a7fe60f/slf4j-api-2.0.17.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.24/9b5aeb0cea9f958b9c57fb80e62996e95a3e9379/aspectjweaver-1.9.24.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.18.3/cc57924cccf42fc852081c36215272f84ffcd991/jackson-datatype-jsr310-2.18.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.18.3/fa63ae5eb3956b1a6d7a7ead2b513af89dea22e7/jackson-module-parameter-names-2.18.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.18.3/7fa21cf7da4598f8240e4ebd9779249622af1acd/jackson-annotations-2.18.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.18.3/78f80c259268200e588aa204dd97ecf09b76916e/jackson-core-2.18.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.18.3/621558295660935134b171ce2b0d9ad6842ec2ff/jackson-datatype-jdk8-2.18.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.18.3/537e3886263e3b3464385040453e92567fd509e2/jackson-databind-2.18.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/10.1.40/ffdcf96aa28e77858644f4db100e8de896ba58e3/tomcat-embed-websocket-10.1.40.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/10.1.40/fc1c09b726336dc6f7dde0408cebb1a56a3a28d3/tomcat-embed-core-10.1.40.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/10.1.40/1b321790508c1d410689b4f496dae18a97fa6ae9/tomcat-embed-el-10.1.40.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.14.6/3ba55114eb3f2b33431ce6cf80c6114cf2b21c9/micrometer-observation-1.14.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.eclipse.angus/angus-activation/2.0.2/41f1e0ddd157c856926ed149ab837d110955a9fc/angus-activation-2.0.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.3/fa165bd70cda600368eee31555222776a46b881f/jakarta.activation-api-2.1.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.5.2/ce16fd235cfee48e67eda33e684423bba09f7d07/accessors-smart-2.5.2.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.3/1049c09f1de4331e8193e579448d0916d75b7631/objenesis-3.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.2.6/f4468f33de0015179abb6055964801bc962f8d51/spring-jcl-6.2.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/6.4.5/9d3340a1f6cd975dbb72b22b865119b614c43060/spring-security-crypto-6.4.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-commons/1.14.6/1a6595762c77bd8401cf51aa11bac8e4fa747545/micrometer-commons-1.14.6.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.7.1/f0ed132a49244b042cd0e15702ab9f2ce3cc8436/asm-9.7.1.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.5.18/6c0375624f6f36b4e089e2488ba21334a11ef13f/logback-core-1.5.18.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.24.3/b02c125db8b6d295adf72ae6e71af5d83bce2370/log4j-api-2.24.3.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/4.0.5/f36a4ef12120a9bb06d766d6a0e54b144fd7ed98/txw2-4.0.5.jar:/Users/samwolfe/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/4.1.2/18ec117c85f3ba0ac65409136afa8e42bc74e739/istack-commons-runtime-4.1.2.jar, java.vm.vendor=Homebrew, sun.arch.data.model=64, user.variant=, java.vendor.url=https://github.com/Homebrew/homebrew-core/issues, user.timezone=America/New_York, jakarta.persistence.sharedCache.mode=UNSPECIFIED, org.jboss.logging.provider=slf4j, java.vm.specification.version=17, os.name=Mac OS X, APPLICATION_NAME=demo, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home/lib, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 5', javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@75add13c, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, hibernate.cdi.extensions=true, user.home=/Users/samwolfe, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2025-04-15, java.home=/opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jakarta.persistence.validation.mode=AUTO, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=17.0.15+0, user.name=samwolfe, path.separator=:, os.version=15.3.1, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, FILE_LOG_PATTERN=%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %level - %msg%n, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Homebrew, LOG_FILE=logs/demo.log, java.vendor.url.bug=https://github.com/Homebrew/homebrew-core/issues, java.io.tmpdir=/var/folders/50/yqmfk15n0v5fx6wcdyn1t0mr0000gn/T/, java.version=17.0.15, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=/Users/samwolfe/Documents/demo, os.arch=aarch64, java.vm.specification.name=Java Virtual Machine Specification, PID=50387, org.gradle.internal.worker.tmpdir=/Users/samwolfe/Documents/demo/build/tmp/test/work, CONSOLE_LOG_CHARSET=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@224d537d, native.encoding=UTF-8, java.library.path=/Users/samwolfe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Homebrew, java.vm.info=mixed mode, sharing, java.vm.version=17.0.15+0, java.specification.maintenance.version=1, sun.io.unicode.encoding=UnicodeBig, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=61.0, LOGGED_APPLICATION_NAME=[demo] }
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryImpl - DEBUG - Session factory constructed with filter configurations : {}
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@38923cfe] under count; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@5bccaedb] under every; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@67784537] under any; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6a0c7af6] under sinh; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7f1ad846] under cosh; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5d5ae6aa] under tanh; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2bc2e022] under pi; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2210e466] under log; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : length -> character_length
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@1ff81b0d] under position; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@54b2d002] under overlay; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@7b795db7] under trim; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@774c5e5c] under cast; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4cf01c41] under collate; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@c83ed77] under extract; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@53e82089] under ifnull; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@5e80d5] under pad; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@1eabfad5] under str; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@3c826498] under format; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@7d156f8f] under timestampadd; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@517bdce0] under timestampdiff; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : dateadd -> timestampadd
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : datediff -> timestampdiff
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@46e6458d] under current_date; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@6297cb4b] under current_time; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@65d6640] under current_timestamp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : current date -> current_date
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : current time -> current_time
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : current timestamp -> current_timestamp
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@672d8370] under local_date; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@13137835] under local_time; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@4f82248f] under local_datetime; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@22002459] under offset_datetime; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : local date -> local_date
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : local time -> local_time
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : local datetime -> local_datetime
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : offset datetime -> offset_datetime
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@29bd056a] under instant; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : current_instant -> instant
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@1dc9f5ad] under sql; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2210e466
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4a2d66e] under mod; prior registration was NamedSqmFunctionTemplate(mod)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log10)] under log10; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tanh)] under tanh; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5d5ae6aa
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sinh)] under sinh; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6a0c7af6
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cosh)] under cosh; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7f1ad846
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acosh)] under acosh; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asinh)] under asinh; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atanh)] under atanh; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cbrt)] under cbrt; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(pi)] under pi; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2bc2e022
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(initcap)] under initcap; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substring; prior registration was NamedSqmFunctionTemplate(substring)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(translate)] under translate; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_number)] under to_number; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_char)] under to_char; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_date)] under to_date; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(to_timestamp)] under to_timestamp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ConcatPipeFunction@69b1e8f8] under concat; prior registration was NamedSqmFunctionTemplate(concat)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@13137835
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@4f82248f
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LengthFunction@11c999da] under character_length; prior registration was NamedSqmFunctionTemplate(character_length)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : length -> character_length
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LengthFunction@54f69311] under bit_length; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LengthFunction@4ab86b2a] under octet_length; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(chr)] under chr; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : char -> chr
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7793b55d] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@1ff81b0d
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2ac9e53c] under bitand; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4ac7856f] under bitor; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@432f4626] under bitxor; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@297c3a43] under bitnot; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bool_and)] under bool_and; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : every -> bool_and
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bool_or)] under bool_or; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : any -> bool_or
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4c79ca55] under median; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(covar_pop)] under covar_pop; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(covar_samp)] under covar_samp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(corr)] under corr; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_avgx)] under regr_avgx; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_avgy)] under regr_avgy; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_count)] under regr_count; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_intercept)] under regr_intercept; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_r2)] under regr_r2; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_slope)] under regr_slope; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_sxx)] under regr_sxx; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_sxy)] under regr_sxy; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(regr_syy)] under regr_syy; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3c4ad54] under insert; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@4b56b517] under overlay; prior registration was org.hibernate.dialect.function.InsertSubstringOverlayEmulation@54b2d002
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@1124dd79] under locate; prior registration was NamedSqmFunctionTemplate(locate)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggStringAggEmulation@35841d6] under listagg; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayConstructorFunction@1ba7db2a] under array; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayConstructorFunction@762cdf46] under array_list; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayAggFunction@19e2db7c] under array_agg; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayPositionFunction@1cab19e2] under array_position; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayPositionsFunction@6fa7ce4] under array_positions; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayPositionsFunction@401b67a9] under array_positions_list; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4e3ee457] under array_length; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.DynamicDispatchFunction@2d2a8819] under length; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayConcatFunction@2133b712] under array_concat; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayConcatElementFunction@55397d15] under array_prepend; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayConcatElementFunction@5e360c3b] under array_append; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayContainsOperatorFunction@737ff5c4] under array_contains; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayContainsOperatorFunction@7e9a836] under array_contains_nullable; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayIncludesOperatorFunction@63a72cc6] under array_includes; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayIncludesOperatorFunction@61bd0845] under array_includes_nullable; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayIntersectsOperatorFunction@70ce2fb2] under array_intersects; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayIntersectsOperatorFunction@64688978] under array_intersects_nullable; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : array_overlaps -> array_intersects
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : array_overlaps_nullable -> array_intersects_nullable
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@4c02899] under array_get; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArraySetUnnestFunction@5e055ce1] under array_set; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(array_remove)] under array_remove; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayRemoveIndexUnnestFunction@4888425d] under array_remove_index; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3c8758d1] under array_slice; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(array_replace)] under array_replace; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@166ddfb7] under array_trim; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayFillFunction@1b36d248] under array_fill; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.PostgreSQLArrayFillFunction@7e94de5f] under array_fill_list; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.array.ArrayToStringFunction@18dbc1b] under array_to_string; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_date)] under make_date; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_time)] under make_time; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_timestamp)] under make_timestamp; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(make_timestamptz)] under make_timestamptz; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InverseDistributionFunction@23d978b] under mode; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InverseDistributionFunction@3cf70afa] under percentile_cont; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InverseDistributionFunction@66dd04e2] under percentile_disc; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@602a3237] under rank; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@4b511e61] under dense_rank; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@74a74070] under percent_rank; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetFunction@6c6919ff] under cume_dist; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLMinMaxFunction@74eab077] under min; prior registration was NamedSqmFunctionTemplate(min)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLMinMaxFunction@3063be68] under max; prior registration was NamedSqmFunctionTemplate(max)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3a3bc0da] under bitxor; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@432f4626
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLTruncRoundFunction@45832b85] under round; prior registration was NamedSqmFunctionTemplate(round)
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.dialect.function.PostgreSQLTruncFunction@6d842877] under trunc; prior registration was null
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registering alternate key : truncate -> trunc
+2025-05-13 14:41:59 - o.h.q.s.function.SqmFunctionRegistry - DEBUG - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@614cbec4] under date_trunc; prior registration was null
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - abs(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double acos(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double acosh(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean any(BOOLEAN predicate)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_agg(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_append( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_concat( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_contains(ARRAY haystackArray, OBJECT needleElementOrArray)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_contains_nullable(ARRAY haystackArray, OBJECT needleElementOrArray)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_fill(OBJECT element, INTEGER elementCount)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_fill_list(OBJECT element, INTEGER elementCount)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_get(ARRAY array, INTEGER index)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_includes(ARRAY haystackArray, OBJECT needleArray)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_includes_nullable(ARRAY haystackArray, OBJECT needleArray)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_intersects(ARRAY array0, OBJECT array1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_intersects_nullable(ARRAY array0, OBJECT array1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer array_length(ARRAY array)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_list( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_overlaps(ARRAY array0, OBJECT array1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean array_overlaps_nullable(ARRAY array0, OBJECT array1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer array_position(ARRAY array, OBJECT element[, INTEGER startPosition])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - int[] array_positions(ARRAY array, OBJECT element)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - List array_positions_list(ARRAY array, OBJECT element)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_prepend( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_remove( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_remove_index( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_replace(ARRAY array, OBJECT old, OBJECT new)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_set( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_slice(ARRAY array, INTEGER start, INTEGER end)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String array_to_string( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - array_trim(ARRAY array, INTEGER elementsToRemove)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer ascii(STRING arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double asin(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double asinh(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double atan(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double atan2(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double atanh(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - avg(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - bit_and(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer bit_length(STRING_OR_CLOB arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - bit_or(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - bitand(arg0, arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - bitnot(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - bitor(arg0, arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - bitxor(arg0, arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean bool_and(BOOLEAN predicate)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean bool_or(BOOLEAN predicate)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - cast(arg as Type)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double cbrt(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - ceiling(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Character char(INTEGER arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer character_length(STRING_OR_CLOB arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Character chr(INTEGER arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - coalesce(arg0[, arg1[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String collate(STRING string as COLLATION collation)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - (STRING string0[, STRING string1[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double corr(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double cos(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double cosh(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double cot(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Long count([distinct ]{arg|*})
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double covar_pop(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double covar_samp(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double cume_dist([arg0[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Date current date
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Time current time
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Timestamp current timestamp
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Date current_date
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Instant current_instant
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Time current_time
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Timestamp current_timestamp
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - date_trunc(STRING field, TEMPORAL datetime)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Long|Double datediff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double degrees(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Long dense_rank([arg0[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Boolean every(BOOLEAN predicate)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double exp(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - first_valueANY value
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - floor(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String format(TEMPORAL datetime as STRING pattern)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - ifnull(arg0, arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String initcap(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Instant instant
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - lagANY value[, INTEGER offset[, ANY default]]
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - last_valueANY value
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - leadANY value[, INTEGER offset[, ANY default]]
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String left(STRING string, INTEGER length)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - length
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String listagg(STRING arg0, STRING arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double ln(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - LocalDate local date
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - LocalDateTime local datetime
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - LocalTime local time
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - LocalDate local_date
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - LocalDateTime local_datetime
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - LocalTime local_time
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Time localtime
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Timestamp localtimestamp
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer locate(STRING pattern, STRING string[, INTEGER start])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double log(NUMERIC arg0[, NUMERIC arg1])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double log10(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String lower(STRING string)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String lpad(STRING string, INTEGER length[, STRING padding])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String ltrim(STRING string[, STRING characters])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Date make_date(INTEGER arg0, INTEGER arg1, INTEGER arg2)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Time make_time(INTEGER arg0, INTEGER arg1, INTEGER arg2)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Timestamp make_timestamp(INTEGER arg0, INTEGER arg1, INTEGER arg2, INTEGER arg3, INTEGER arg4, INTEGER arg5)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Timestamp make_timestamptz(INTEGER arg0, INTEGER arg1, INTEGER arg2, INTEGER arg3, INTEGER arg4, INTEGER arg5[, INTEGER arg6])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - max(COMPARABLE arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String md5(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double median(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - min(COMPARABLE arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer mod(INTEGER arg0, INTEGER arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - mode()
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - nth_valueANY value, INTEGER nth
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - nullif(arg0, arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer octet_length(STRING_OR_CLOB arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - OffsetDateTime offset datetime
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - OffsetDateTime offset_datetime
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String overlay(string placing replacement from start[ for length])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double percent_rank([arg0[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - percentile_cont(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - percentile_disc(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double pi
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer position(STRING pattern in STRING string)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double power(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double radians(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Long rank([arg0[, ...]])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_avgx(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_avgy(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_count(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_intercept(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_r2(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_slope(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_sxx(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_sxy(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double regr_syy(NUMERIC arg0, NUMERIC arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String repeat(STRING string, INTEGER times)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String replace(STRING string, STRING pattern, STRING replacement)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String right(STRING string, INTEGER length)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - round(NUMERIC number[, INTEGER places])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Long row_number()
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String rpad(STRING string, INTEGER length[, STRING padding])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String rtrim(STRING string[, STRING characters])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Integer sign(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double sin(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double sinh(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String soundex(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Object sql
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double sqrt(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double stddev(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double stddev_pop(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double stddev_samp(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String str(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String substr(STRING string, INTEGER start[, INTEGER length])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - sum(arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double tan(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double tanh(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Long|Double timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String to_char(ANY arg0[, STRING arg1, STRING arg2])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Date to_date(STRING arg0[, STRING arg1, STRING arg2])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double to_number(STRING arg0[, STRING arg1, STRING arg2])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Timestamp to_timestamp(STRING arg0[, STRING arg1, STRING arg2])
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String translate(STRING arg0, STRING arg1, STRING arg2)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - trunc( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - truncate( ... )
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - String upper(STRING string)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double var_pop(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double var_samp(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.HQL_FUNCTIONS - DEBUG - Double variance(NUMERIC arg)
+2025-05-13 14:41:59 - org.hibernate.orm.query.plan.cache - DEBUG - Starting QueryInterpretationCache(2048)
+2025-05-13 14:41:59 - o.h.s.i.SessionFactoryServiceRegistryImpl - DEBUG - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-05-13 14:41:59 - o.h.e.i.EntityCopyObserverFactoryInitiator - DEBUG - Configured EntityCopyObserver strategy: disallow
+2025-05-13 14:41:59 - o.h.b.internal.ClassLoaderAccessImpl - DEBUG - Not known whether passed class name [com.example.demo.Book] is safe
+2025-05-13 14:41:59 - o.h.b.internal.ClassLoaderAccessImpl - DEBUG - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.Book
+2025-05-13 14:41:59 - o.h.b.i.b.BytecodeProviderImpl - DEBUG - HHH000513: Unable to create the ReflectionOptimizer for [com.example.demo.Book]: private accessor [description]
+2025-05-13 14:41:59 - o.h.orm.model.mapping.creation - DEBUG - Starting post-init callbacks
+2025-05-13 14:41:59 - o.h.orm.model.mapping.creation - DEBUG - Starting PostInitCallbackEntry : Entity(com.example.demo.Book) `staticFetchableList` generator
+2025-05-13 14:41:59 - org.hibernate.orm.sql.ast.create - DEBUG - Created new SQL alias : b1_0
+2025-05-13 14:41:59 - org.hibernate.orm.sql.ast.create - DEBUG - Registration of TableGroup [StandardTableGroup(com.example.demo.Book)] with identifierForTableGroup [com.example.demo.Book] for NavigablePath [com.example.demo.Book] 
+2025-05-13 14:41:59 - org.hibernate.orm.results.graph.AST - DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.demo.Book]
+ |  +-BasicFetch [com.example.demo.Book.description]
+ |  +-BasicFetch [com.example.demo.Book.name]
+ |  \-BasicFetch [com.example.demo.Book.rating]
+
+2025-05-13 14:41:59 - org.hibernate.orm.sql.ast.tree - DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (b1 : com.example.demo.Book) {
+          primaryTableReference : books as b1_0
+        }
+      }
+    }
+
+2025-05-13 14:41:59 - o.h.p.entity.AbstractEntityPersister - DEBUG - Static SQL for entity: com.example.demo.Book
+2025-05-13 14:41:59 - o.h.p.entity.AbstractEntityPersister - DEBUG -  Version select: select id from books where id=?
+2025-05-13 14:41:59 - o.h.p.entity.AbstractEntityPersister - DEBUG -  Insert (0): insert into books (description,name,rating) values (?,?,?)
+2025-05-13 14:41:59 - o.h.p.entity.AbstractEntityPersister - DEBUG -  Update (0): update books set description=?,name=?,rating=? where id=?
+2025-05-13 14:41:59 - o.h.p.entity.AbstractEntityPersister - DEBUG -  Delete (0): delete from books where id=?
+2025-05-13 14:41:59 - o.h.e.t.j.p.i.JtaPlatformInitiator - INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-13 14:41:59 - o.h.type.spi.TypeConfiguration$Scope - DEBUG - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ca2cd5e] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@647aa45c]
+2025-05-13 14:41:59 - o.h.q.named.NamedObjectRepository - DEBUG - Checking 0 named HQL queries
+2025-05-13 14:41:59 - o.h.q.named.NamedObjectRepository - DEBUG - Checking 0 named SQL queries
+2025-05-13 14:41:59 - org.hibernate.mapping.Table - DEBUG - No alter strings for table : books
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryRegistry - DEBUG - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@3a359f7c
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryRegistry - DEBUG - Registering SessionFactory: ec5e3265-1260-4eeb-96e1-a16d37950c5c (<unnamed>)
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryRegistry - DEBUG - Not binding SessionFactory to JNDI, no JNDI name configured
+2025-05-13 14:41:59 - o.h.internal.SessionFactoryImpl - DEBUG - Instantiated SessionFactory
+2025-05-13 14:41:59 - o.s.o.j.LocalContainerEntityManagerFactoryBean - INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13 14:41:59 - o.h.s.internal.StatisticsInitiator - DEBUG - Statistics initialized [enabled=false]
+2025-05-13 14:41:59 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-13 14:41:59 - o.s.w.s.m.m.a.RequestMappingHandlerMapping - DEBUG - 6 mappings in 'requestMappingHandlerMapping'
+2025-05-13 14:41:59 - o.s.w.s.h.SimpleUrlHandlerMapping - DEBUG - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-13 14:41:59 - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - DEBUG - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-13 14:41:59 - o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - DEBUG - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-13 14:42:00 - c.example.demo.DemoApplicationTests - INFO - Started DemoApplicationTests in 1.75 seconds (process running for 2.27)
+2025-05-13 14:42:00 - o.s.w.c.s.GenericWebApplicationContext - DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@1a5f7e7c, started on Tue May 13 14:41:58 EDT 2025
+2025-05-13 14:42:00 - o.s.o.j.LocalContainerEntityManagerFactoryBean - INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13 14:42:00 - o.h.internal.SessionFactoryImpl - DEBUG - HHH000031: Closing
+2025-05-13 14:42:00 - o.h.type.spi.TypeConfiguration$Scope - DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@216a3001] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@647aa45c]
+2025-05-13 14:42:00 - o.h.s.i.AbstractServiceRegistryImpl - DEBUG - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2025-05-13 14:42:00 - o.h.b.r.i.BootstrapServiceRegistryImpl - DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2025-05-13 14:42:00 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown initiated...
+2025-05-13 14:42:00 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown completed.
