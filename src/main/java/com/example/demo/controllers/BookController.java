@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import java.util.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
@@ -8,18 +7,16 @@ import org.springframework.http.HttpStatus;
 import org.springframework.dao.EmptyResultDataAccessException;
 import lombok.extern.slf4j.Slf4j;
 
-
-
 @RestController
 @RequestMapping("/api/books")
 @Slf4j
 public class BookController {
     private final BookRepository repo;
-    
+
     public BookController(BookRepository repo) {
         this.repo = repo;
     }
-    
+
     @PostMapping
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
         try {
@@ -29,11 +26,10 @@ public class BookController {
             return ResponseEntity.status(HttpStatus.CREATED).body(savedBook);
         } catch (Exception e) {
             log.error("Error adding book: ", e);
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                              .body(null);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
-    
+
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteBook(@PathVariable Long id) {
         try {
@@ -54,17 +50,20 @@ public class BookController {
     public ResponseEntity<Book> updateBook(@PathVariable Long id, @RequestBody Book updatedBook) {
         return repo.findById(id)
             .map(book -> {
-                book.setName(updatedBook.getName());
+                book.setTitle(updatedBook.getTitle());
+                book.setAuthor(updatedBook.getAuthor());
+                book.setAmazonRating(updatedBook.getAmazonRating());
                 book.setDescription(updatedBook.getDescription());
-                book.setRating(updatedBook.getRating());
+                book.setImageUrl(updatedBook.getImageUrl());
+                book.setGenre(updatedBook.getGenre());
                 Book savedBook = repo.save(book);
                 return ResponseEntity.ok(savedBook);
             })
             .orElse(ResponseEntity.notFound().build());
     }
+
     @GetMapping
     public List<Book> getAllBooks() {
         return repo.findAll();
     }
-
 }

@@ -6,38 +6,50 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 
-
 @Entity
-@Table(name = "Books")
+@Table(name = "books")
 public class Book {
+
     @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
-    private String name;
+
+    private String title;
+    private String author;
+    private Double amazonRating;
     private String description;
-    private Double rating;
-    
+    private String imageUrl;
+    private String genre;
+
     // No-arg constructor required by JPA
     public Book() {}
-    
-    // Constructor with all fields
-    public Book(Long id, String name, String description, Double rating) {
+
+    // All-args constructor
+    public Book(Long id, String title, String author, Double amazonRating, String description, String imageUrl, String genre) {
         this.id = id;
-        this.name = name;
+        this.title = title;
+        this.author = author;
+        this.amazonRating = amazonRating;
         this.description = description;
-        this.rating = rating;
+        this.imageUrl = imageUrl;
+        this.genre = genre;
     }
 
     // Getters
     public Long getId() { return id; }
-    public String getName() { return name; }
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public Double getAmazonRating() { return amazonRating; }
     public String getDescription() { return description; }
-    public Double getRating() { return rating; }
-    
+    public String getImageUrl() { return imageUrl; }
+    public String getGenre() { return genre; }
+
     // Setters
     public void setId(Long id) { this.id = id; }
-    public void setName(String name) { this.name = name; }
+    public void setTitle(String title) { this.title = title; }
+    public void setAuthor(String author) { this.author = author; }
+    public void setAmazonRating(Double amazonRating) { this.amazonRating = amazonRating; }
     public void setDescription(String description) { this.description = description; }
-    public void setRating(Double rating) { this.rating = rating; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+    public void setGenre(String genre) { this.genre = genre; }
 }
