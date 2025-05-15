@@ -66,4 +66,12 @@ public class BookController {
     public List<Book> getAllBooks() {
         return repo.findAll();
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Book> getBookById(@PathVariable Long id) {
+    return repo.findById(id)
+        .map(ResponseEntity::ok)
+        .orElse(ResponseEntity.notFound().build());
+}
+
 }
